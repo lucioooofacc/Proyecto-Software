@@ -3,6 +3,23 @@
 <head>
 <title>Wiki de Minecraft</title> 
 <style>
+.index-btn {
+  background: linear-gradient(rgb(54, 179, 54));
+  color: rgb(0, 0, 0);
+  border-radius: 8px;
+  padding:10px;
+  font-size:1rem;
+  font-family:sans-serif;
+  cursor: pointer;
+}
+.index-btn:hover {
+  background: linear-gradient(90deg, #1e8830 40%, #00e007 100%);
+  transform: scale(1.05);
+}
+
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   padding: 0;
@@ -26,9 +43,9 @@ body {
   background-repeat: no-repeat;
 }
 #lista {
-  width: 220px;      
+  width: 225px;      
   float: left;          
-  margin-right: 30px;     
+  margin-right: 20px;  
 }
 #main {
   overflow: hidden;      
@@ -46,32 +63,46 @@ body {
       <div id="lista">
         <ol style="color: white; background-color:rgba(0, 0, 0, 0.452); border-radius: 10px;">
           <h1 style="color:rgb(255, 255, 255); text-align: center; display:inline-block;">Índice</h1>
-          <li> 
-            <button onclick="document.getElementById('whatsminecraft').style.display = document.getElementById('whatsminecraft').style.display === 'none' ? 'block' : 'none';">
-          ¿Qué es Minecraft? </button>
-          <p id="whatsminecraft" style="display:none; color:black; background-color:rgba(255, 255, 255, 0.527); padding:10px; border-radius:5px; margin-right: 15px;"> Minecraft es un juego </p>
+          <l> 
+            <a href="#section2">
+              <button class="index-btn">
+                ¿Qué es Minecraft?
+              </button>
+            </a>
             <ol>
-              <li>¿Qué puedes hacer en él?</li>
-              <li>Breve historia</li>
+              <li>
+                  <button style="margin-right: 10px; margin-top: 10px;">
+                ¿Qué puedes hacer en el juego?</li>
+                </button>
+              <li>
+                  <button style="margin-right: 10px; margin-top: 5px; margin-bottom: 10px;">
+                Breve historia del juego</li>
+                </button>
             </ol>
-          </li>
-          <li>Historia de Minecraft</li>
-          <li> Biomas</li>
-          <li> Criaturas</li>
-          <li> <br><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br></li>
+          </l>
+          <l> 
+            <a href="#section3">
+              <button class="index-btn">
+                Historia de Minecraft
+              </button>
+            </a>
+          </l>
+          <l> Biomas</l> <br>
+          <l> Mobs</l>
+          <l> <br><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br></li>
         </ol>
       </div>
       <div id="main">
         <p style="text-align: left; color: black; background-color: rgba(255, 255, 255, 0.527); border-radius: 5px; padding: 4px; margin-right: 5px;">
-          Minecraft es un juego donde todo está hecho de bloques, pero esos bloques te permiten crear mundos enteros. Al principio parece simple (árboles, tierra, piedra, animales), pero cuando empiezas a jugar, te das cuenta de lo infinito que es. Puedes explorar cuevas gigantes, construir castillos enormes, sobrevivir la noche contra zombis y esqueletos, o simplemente relajarte cultivando y decorando tu casa.<br><br>
-          Lo que hace especial a Minecraft es la libertad. No hay una sola forma de jugarlo. Algunas personas se enfocan en la aventura, preparándose para luchar contra el Dragón del End, mientras que otras pasan horas diseñando ciudades, máquinas o arte en píxeles. Es como una mezcla de supervivencia, creatividad e imaginación, todo en uno.<br><br>
-          Y sinceramente, por eso sigue siendo tan popular después de tantos años. Cada mundo se siente personal, cada creación es tuya, y siempre terminas encontrando algo nuevo para hacer. Para nosotros, no es solo un juego, es como una caja de arena donde puedes construir tu propia historia, bloque por bloque.
+          Minecraft es un juego donde todo está hecho de bloques, pero esos bloques te permiten crear mundos enteros. Al principio parece simple (árboles, tierra, piedra, animales), pero cuando empiezas a jugar, te das cuenta de lo infinito que puede ser. Puedes explorar enormes cuevas, construir castillos gigantes, sobrevivir la noche contra zombis y esqueletos, o simplemente relajarte cultivando y decorando tu casa.<br><br>
+          Lo que hace especial a Minecraft es la libertad. No hay una sola forma de jugarlo. Algunas personas se enfocan en la aventura, preparándose para luchar contra el Dragón del End, mientras que otras pasan horas diseñando ciudades, máquinas o arte en píxeles. Es casi como una mezcla de supervivencia, creatividad e imaginación, todo en uno.<br><br>
+          Y sinceramente, por eso sigue siendo tan popular después de tantos años. Cada mundo se siente personal, cada creación se siente tuya, y siempre terminas encontrando algo nuevo para hacer. Para nosotros, no es solo un juego, es como una caja de arena donde puedes construir tu propia historia, bloque por bloque.
         </p>
         <button onclick="document.getElementById('infoExtra').style.display = document.getElementById('infoExtra').style.display === 'none' ? 'block' : 'none';">
-          Más información
+          Más información sobre el juego
         </button>
         <p id="infoExtra" style="display:none; color:black; background-color:rgba(255, 255, 255, 0.527); padding:10px; border-radius:5px;">
-          Aquí encontrarás más información sobre Minecraft
+          Aquí encontrarás más información sobre el juego
         </p>
         <button onclick="document.getElementById('Biomes').style.display = document.getElementById('Biomes').style.display === 'none' ? 'block' : 'none';">
           Biomas
@@ -81,14 +112,15 @@ body {
         </p> 
       </div>
     </div>
-  <img src="https://i.postimg.cc/bNyVfZrn/otrosteve.jpg" alt="steve" style="width: 500px; height: 250px; float:right; margin-right: 5px;">
+    <img src="https://i.postimg.cc/bNyVfZrn/otrosteve.jpg" alt="steve" style="width: 400px; height: 200px; float:right; margin-right: 5px;">
   </section>
-  <section class="section2">
+  <section class="section2" id="section2">
+    <br>
   </section>
-  <section class="section3">
+  <section class="section3" id="section3">
     <br><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
       <div id="foooter">
-      <h2 style="background-color: rgb(255, 255, 255, 0.527); display: inline-block;"> Fuentes</h2>
+      <h2 style="background-color: rgb(255, 255, 255, 0.527); display: inline-block;">Fuentes</h2>
       <br>
       <ul style="display: inline-block;">
         <li style="background-color:rgba(255, 255, 255, 0.527);"> <a href="https://es.minecraft.wiki/"> Wiki de Minecraft</a></li>
@@ -98,4 +130,4 @@ body {
   </footer>
 </section>
 </body>
-</html> 
+</html>
