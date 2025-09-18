@@ -16,6 +16,7 @@
   background: linear-gradient(90deg, #1e8830 40%, #00e007 100%);
   transform: scale(1.05);
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -55,76 +56,90 @@ body {
   <section class="section1">
     <div id="body">
       <div id="Titulo">
-        <a href="proyecto.html"> <button> < Traducir a inglés  </button>
+        <a href="proyectoespañol.html"> <button> Traducir a inglés </button></a>
         <center>
           <img src="https://github.com/lucioooofacc/Proyecto-Hardware/blob/main/titulominecraft.png?raw=true" alt="titulomine" style="width: 600px; height: 100px;">
         </center>
       </div>
       <div id="lista">
-        <ol style="color: white; background-color:rgba(0, 0, 0, 0.452); border-radius: 10px;">
+        <ol style="color: white; background-color:rgba(0, 0, 0, 0.452); border-radius: 10px; display:flex;flex-direction: column; gap: 20px; margin-left: 20px;">
           <h1 style="color:rgb(255, 255, 255); text-align: center; display:inline-block;">Índice</h1>
           <l> 
-            <a href="#section2">
+            <a href="#section1">
               <button class="index-btn">
                 ¿Qué es Minecraft?
               </button>
             </a>
-            <ol>
+            <ul style="display: flex; flex-direction: column; gap: 15px;">
               <li>
-                  <button style="margin-right: 10px; margin-top: 10px;">
-                ¿Qué puedes hacer en él?</li>
-                </button>
+                ¿Qué se puede hacer en él?
+              </li>
               <li>
-                  <button style="margin-right: 10px; margin-top: 5px; margin-bottom: 10px;">
-                Breve historia</li>
-                </button>
-            </ol>
+                Breve historia
+              </li>
+            </ul>
           </l>
           <l> 
-            <a href="#section3">
+            <a href="#section2">
               <button class="index-btn">
-                Historia de Minecraft
+                Modos de juego
               </button>
             </a>
           </l>
-          <l> Biomas</l> <br>
-          <l> Mobs</l>
-          <l> <br><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br></li>
+          <a href="#section3">
+              <button class="index-btn">
+                Biomas
+              </button>
+            </a>
+          <a href="#section1">
+              <button class="index-btn">
+                Mobs
+              </button>
+            </a>
+          <l> <br><br> <br> <br> <br> <br> <br> <br> <br> <br></li>
         </ol>
       </div>
       <div id="main">
-        <p style="text-align: left; color: black; background-color: rgba(255, 255, 255, 0.527); border-radius: 5px; padding: 4px; margin-right: 5px;">
-          Minecraft es un juego donde todo está hecho de bloques, pero esos bloques te permiten crear mundos enteros. Al principio parece simple (árboles, tierra, piedra, animales), pero una vez que empiezas a jugar, te das cuenta de lo infinito que es. Puedes explorar cuevas gigantes, construir castillos enormes, sobrevivir la noche contra zombis y esqueletos, o simplemente relajarte cultivando y decorando tu casa.<br><br>
-          Lo que hace especial a Minecraft es la libertad. No hay una sola forma de jugarlo. Algunas personas se enfocan en la aventura, equipándose para luchar contra el Dragón del End, mientras que otras pasan horas diseñando ciudades, máquinas o arte en píxeles. Es casi como una mezcla de supervivencia, creatividad e imaginación, todo en uno.<br><br>
-          Y sinceramente, por eso sigue siendo tan popular después de tantos años. Cada mundo se siente personal, cada creación se siente tuya, y siempre terminas encontrando algo nuevo que hacer. Para nosotros, no es solo un juego, es como una caja de arena donde puedes construir tu propia historia, bloque por bloque.
-        </p>
-        <button onclick="document.getElementById('infoExtra').style.display = document.getElementById('infoExtra').style.display === 'none' ? 'block' : 'none';">
-          Más información
-        </button>
-        <p id="infoExtra" style="display:none; color:black; background-color:rgba(255, 255, 255, 0.527); padding:10px; border-radius:5px;">
-          Aquí encontrarás más información sobre el juego.
-        </p>
-        <button onclick="document.getElementById('Biomes').style.display = document.getElementById('Biomes').style.display === 'none' ? 'block' : 'none';">
-          Biomas
-        </button>
-        <p id="Biomes" style="display:none; color:black; background-color:rgba(255, 255, 255, 0.527); padding:10px; border-radius:5px;">
-          Los biomas en Minecraft son muy diferentes.
-        </p> 
+        <table>
+    <tr>
+      <td>
+        <img src="https://raw.githubusercontent.com/lucioooofacc/Proyecto-Hardware/refs/heads/main/otrosteve%20(1).jfif" 
+        alt="steve" 
+        style="width: 400px; height: 200px; float:right">
+        <p style="text-align: left; color: black; background-color: rgba(255, 255, 255, 0.527); border-radius: 5px; padding: 4px; margin-right: 450px;">
+          Minecraft es un juego donde todo está hecho de bloques, pero esos bloques te permiten crear mundos enteros. Al principio, parece simple (árboles, tierra, piedra, animales), pero una vez que empiezas a jugar, te das cuenta de lo infinito que realmente es. Puedes explorar cuevas gigantes, construir enormes castillos, sobrevivir la noche contra zombis y esqueletos, o simplemente relajarte cultivando y decorando tu casa. <br><br>
+          Lo que hace especial a Minecraft es la libertad. No hay una sola forma de jugarlo. Algunas personas se enfocan en la aventura, preparándose para luchar contra el Dragón del End, mientras que otras pasan horas diseñando ciudades, máquinas o pixel art. Es casi como una mezcla de supervivencia, creatividad e imaginación en uno solo. <br><br>
+          Y sinceramente, por eso sigue siendo tan popular después de tantos años. Cada mundo se siente personal, cada creación se siente tuya, y siempre terminas encontrando algo nuevo que hacer. Para nosotros, no es solo un juego, es como una caja de arena donde puedes construir tu propia historia, bloque por bloque. </p>
+        
+        <p style="text-align: left; color: black; background-color: rgba(255, 255, 255, 0.527); border-radius: 5px; padding: 4px; margin-right: 50px;">
+          Es uno de los videojuegos más influyentes jamás creados. Fue desarrollado por primera vez en 2009 por Markus Persson, conocido como Notch, quien comenzó trabajando en un sencillo juego de construcción con bloques. El concepto era único: los jugadores podían explorar un mundo hecho completamente de bloques, romperlos y colocarlos de nuevo para crear sus propias estructuras y entornos.<br><br>
+          Con el tiempo, se añadieron nuevas características, como el Modo Supervivencia, donde los jugadores deben recolectar recursos y enfrentarse a criaturas hostiles como zombis, esqueletos y el ahora icónico Creeper. Otras incorporaciones importantes fueron la dimensión del Nether, la del End con el Dragón del End, y más tarde, actualizaciones que introdujeron nuevos biomas, animales y mecánicas.
+          El juego fue lanzado oficialmente en 2011, pero ya había ganado una enorme popularidad gracias a su comunidad y a los creadores de contenido en plataformas como YouTube. Videos, parodias musicales y “Let's Plays” ayudaron a que Minecraft se convirtiera en un fenómeno cultural.<br><br>
+          En 2014, Mojang, el estudio detrás del juego, fue adquirido por Microsoft por 2.5 mil millones de dólares. Aunque esto generó ciertas preocupaciones entre los fans, el juego continuó creciendo. Desde entonces, ha recibido numerosas actualizaciones, introduciendo características como abejas, ajolotes, el Warden y las cuevas y montañas que cambiaron por completo la generación de mundos.
+          Hoy en día, Minecraft es el videojuego más vendido de la historia. Está disponible en casi todas las plataformas, desde computadoras hasta consolas e incluso dispositivos móviles. Más allá de ser un juego, se ha convertido en un espacio de creatividad, educación y comunidad, inspirando a millones de jugadores en todo el mundo.<br><br>
+          Para nosotros, como adolescentes que hemos crecido jugando Minecraft, es más que simple entretenimiento. Es parte de la cultura de nuestra generación. Nos ha dado incontables recuerdos de construir, explorar y, a veces, ser derrotados inesperadamente por un Creeper. Creemos realmente que Minecraft seguirá inspirando a los futuros jugadores tanto como nos ha inspirado a nosotros. </p>
+      </td>
+      <td>
+      </td>
+      </td>
+    </tr>
+  </table>
+ <br> 
       </div>
     </div>
-  <img src="https://raw.githubusercontent.com/lucioooofacc/Proyecto-Hardware/refs/heads/main/otrosteve%20(1).jfif" alt="steve" style="width: 400px; height: 200px; float:right; margin-right: 5px;">
   </section>
   <section class="section2" id="section2">
     <br>
   </section>
   <section class="section3" id="section3">
+    <footer>
     <br><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
-      <div id="foooter">
+      <div id="footer">
       <h2 style="background-color: rgb(255, 255, 255, 0.527); display: inline-block;"> Fuentes</h2>
       <br>
       <ul style="display: inline-block;">
         <li style="background-color:rgba(255, 255, 255, 0.527);"> <a href="https://es.minecraft.wiki/"> Wiki de Minecraft</a></li>
-        <li style="background-color: rgba(255, 255, 255, 0.527);"> <a href="https://www.minecraft.net/es-es"> Libros de Minecraft</a></li>
+        <li style="background-color: rgba(255, 255, 255, 0.527);"> <a href="https://www.minecraft.net/es-es"> Sitio Oficial de Minecraft</a></li>
       </ul>
     </div>
   </footer>
