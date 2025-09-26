@@ -2,144 +2,131 @@
 <html>
 <head>
 <title>Minecraft Wiki</title> 
-<style>
-.index-btn {
-  background: linear-gradient(rgb(54, 179, 54));
-  color: rgb(0, 0, 0);
-border-radius: 8px;
-  padding:10px;
-  font-size:1rem;
-  font-family:sans-serif;
-  cursor: pointer;
-}
-.index-btn:hover {
-  background: linear-gradient(90deg, #1e8830 40%, #00e007 100%);
-  transform: scale(1.05);
-}
-  html {
-  scroll-behavior: smooth;
-}
-body {
-  margin: 0;
-  padding: 0;
-}
-.section1 {
-  min-height: 100vh;
-  background-image: url('https://github.com/lucioooofacc/Proyecto-Hardware/blob/main/fondo%20(1).png?raw=true');
-  background-size: cover;
-  background-repeat: no-repeat; 
-}
-.section2 {
-  min-height: 100vh;
-  background-image: url('https://github.com/lucioooofacc/Proyecto-Hardware/blob/main/fondo-nether.png?raw=true');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.section3 {
-  min-height: 100vh;
-  background-image: url('https://raw.githubusercontent.com/lucioooofacc/Proyecto-Hardware/refs/heads/main/fondo-end.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-#lista {
-  width: 310px;      
-  float: left;          
-  margin-right: 20px;  
-}
-#main {
-  overflow: hidden;      
-}
-</style>
 </head>
-<body>
-  <section class="section1">
+<body style="margin:0">
+  <section id="section1" style="min-height:100vh; background-image:url('https://github.com/lucioooofacc/Proyecto-Hardware/blob/main/fondo%20(1).png?raw=true'); background-size:cover; background-repeat:no-repeat;">
     <div id="body">
       <div id="Titulo">
-        <a href="proyectoespañol.html"><button >Translate to spanish</button></a>
+        <a href="proyectoespañol.html"><button>Translate to spanish</button></a>
         <center>
-          <img src="https://github.com/lucioooofacc/Proyecto-Hardware/blob/main/titulominecraft.png?raw=true" alt="titulomine" style="width: 600px; height: 100px;">
+          <img src="https://github.com/lucioooofacc/Proyecto-Hardware/blob/main/titulominecraft.png?raw=true" alt="titulomine" style="width:600px; height:100px;">
         </center>
       </div>
-      <div id="lista">
-        <ol style="color: white; background-color:rgba(0, 0, 0, 0.452); border-radius: 10px; flex-direction:column; justify-content:center; gap: 20px; margin-left: 20px;">
-          <h1 style="color:rgb(255, 255, 255);">Index</h1>
+      <div id="lista" style="width:310px; float:left; margin-right:20px;">
+        <ol style="color:white; background-color:rgba(0, 0, 0, 0.452); border-radius:10px; margin-left:20px;">
+          <h1 style="color:white;">Index</h1>
           <l> 
             <a href="#section1">
-              <button class="index-btn">
+              <button style="background:rgb(54,179,54); color:black; border-radius:8px; padding:10px; font-size:1rem; cursor:pointer;">
                 What's Minecraft?
               </button>
             </a>
-            <ul style="display: flex; flex-direction: column; gap: 15px;">
-              <li>
-                What you can do in it?
-              </li>
-              <li>
-                Brief history of it
-              </li>
+            <ul>
+              <li>What you can do in it?</li>
+              <li>Brief history of it</li>
             </ul>
           </l>
           <l> 
             <a href="#section2">
-              <button class="index-btn">
+              <button style="background:rgb(54,179,54); color:black; border-radius:8px; padding:10px; font-size:1rem; cursor:pointer;">
                 Content from the game
               </button>
             </a>
+            <ul>
+              <li>Mobs</li>
+              <li>Updates</li>
+              <li>Biomes</li>
+              <li>Blocks</li>
+            </ul>
           </l>
           <a href="#section3">
-              <button class="index-btn">
+              <button style="background:rgb(54,179,54); color:black; border-radius:8px; padding:10px; font-size:1rem; cursor:pointer;">
                 How to beat it
               </button>
-            </a>
-                      <a href="#section1">
-              <button class="index-btn">
+          </a>
+          <ul>
+              <li>Protips to beat it like a champion</li>
+              <li>Usefull items you should use to</li>
+              <li>End credits</li>
+            </ul>
+          <a href="#section4">
+              <button style="background:rgb(54,179,54); color:black; border-radius:8px; padding:10px; font-size:1rem; cursor:pointer;">
                 Fun facts and cultural impact
               </button>
-            </a>
-          <l> <br><br> <br></li>
+              </a>
+              <ul>
+              <li>Revolutionary changes on social media</li>
+              <li>Legendary content creators</li>
+              <li>Fun facts</li>
+            </ul>
+              <br><br>
         </ol>
       </div>
-      <div id="main">
+      <div id="main" style="overflow:hidden;">
         <table>
-    <tr>
-      <td>
-        <img src="https://raw.githubusercontent.com/lucioooofacc/Proyecto-Hardware/refs/heads/main/otrosteve%20(1).jfif"  alt="steve" style="width: 400px; height: 200px; float:right;">
-        <p style="text-align: left; color: black; background-color: rgba(255, 255, 255, 0.527); border-radius: 5px; padding: 4px; margin-right: 450px;">
-          Minecraft is a game where everything is made of blocks, but those blocks let you create entire worlds. At first, it looks simple (trees, dirt, stone, animals) but once you start playing, you realize how endless it actually is. You can explore giant caves, build huge castles, survive the night against zombies and skeletons, or just relax farming and decorating your little house. <br><br>
-          What makes Minecraft special is the freedom. There's no single way to play it. Some people focus on adventure, gearing up to fight the Ender Dragon, while others spend hours designing cities, machines, or pixel art. It's almost like a mix of survival, creativity, and imagination all in one. <br><br>
-          And honestly, that's why it's still so popular after all these years. Every world feels personal, every creation feels like yours, and you always end up finding something new to do. For us, it's not just a game it's like a sandbox where you can build your own story, block by block. </p>
-        
-        <p style="text-align: left; color: black; background-color: rgba(255, 255, 255, 0.527); border-radius: 5px; padding: 4px; margin-right: 50px;">
-          Is one of the most influential video games ever created. It was first developed in 2009 by Markus Persson, known as Notch, who began working on a simple block-based building game. The concept was unique: players could explore a world made entirely of blocks, break them, and place them again to create their own structures and environments.<br><br>
-          Over time, new features were added, such as Survival Mode, where players must gather resources and face hostile creatures like zombies, skeletons, and the now iconic Creeper. Other major additions included the Nether dimension, the End dimension with the Ender Dragon, and later updates that introduced new biomes, animals, and mechanics.
-          The game was officially released in 2011, but it had already gained enormous popularity through its community and content creators on platforms like YouTube. Videos, music parodies, and “Let's Plays” helped Minecraft become a cultural phenomenon.<br><br>
-          In 2014, Mojang, the studio behind the game, was acquired by Microsoft for 2.5 billion dollars. While this sparked some concerns among fans, the game continued to grow. Since then, it has received numerous updates, introducing features such as bees, axolotls, the Warden, and caves and cliffs that completely changed world generation
-          Today, Minecraft is the bestselling videogame in history. It is available on nearly every platform, from computers to consoles and even mobile devices. Beyond being a game, it has become a space for creativity, education, and community, inspiring millions of players worldwide.<br><br>
-          For us, as teenagers who have grown up playing Minecraft, it is more than just entertainment. It is a part of our generation's culture. It has given us countless memories of building, exploring, and sometimes being unexpectedly defeated by a Creeper. We truly believe that Minecraft will continue to inspire future players just as much as it has inspired us. </p>
-      </td>
-      </td>
-    </tr>
-  </table>
+          <tr>
+            <td>
+              <img src="https://raw.githubusercontent.com/lucioooofacc/Proyecto-Hardware/refs/heads/main/otrosteve%20(1).jfif"  alt="steve" style="width:400px; height:200px; float:right;">
+              
+              <p style="text-align:left; color:black; background-color:rgba(255, 255, 255, 0.527); border-radius:5px; padding:4px; margin-right:450px;">
+                Minecraft is a game where everything is made of blocks, but those blocks let you create entire worlds. At first, it looks simple (trees, dirt, stone, animals) but once you start playing, you realize how endless it actually is. You can explore giant caves, build huge castles, survive the night against zombies and skeletons, or just relax farming and decorating your little house. <br><br>
+                What makes Minecraft special is the freedom. There's no single way to play it. Some people focus on adventure, gearing up to fight the Ender Dragon, while others spend hours designing cities, machines, or pixel art. It's almost like a mix of survival, creativity, and imagination all in one. <br><br>
+                And honestly, that's why it's still so popular after all these years. Every world feels personal, every creation feels like yours, and you always end up finding something new to do. For us, it's not just a game it's like a sandbox where you can build your own story, block by block.
+              </p>
+              <p style="text-align:left; color:black; background-color:rgba(255,255,255,0.527); border-radius:5px; padding:4px; margin-right:50px;">
+                Is one of the most influential video games ever created. It was first developed in 2009 by Markus Persson, known as Notch, who began working on a simple block-based building game. The concept was unique: players could explore a world made entirely of blocks, break them, and place them again to create their own structures and environments.<br><br>
+                Over time, new features were added, such as Survival Mode, where players must gather resources and face hostile creatures like zombies, skeletons, and the now iconic Creeper. Other major additions included the Nether dimension, the End dimension with the Ender Dragon, and later updates that introduced new biomes, animals, and mechanics.
+                The game was officially released in 2011, but it had already gained enormous popularity through its community and content creators on platforms like YouTube. Videos, music parodies, and “Let's Plays” helped Minecraft become a cultural phenomenon.<br><br>
+                In 2014, Mojang, the studio behind the game, was acquired by Microsoft for 2.5 billion dollars. While this sparked some concerns among fans, the game continued to grow. Since then, it has received numerous updates, introducing features such as bees, axolotls, the Warden, and caves and cliffs that completely changed world generation
+                Today, Minecraft is the bestselling videogame in history. It is available on nearly every platform, from computers to consoles and even mobile devices. Beyond being a game, it has become a space for creativity, education, and community, inspiring millions of players worldwide.<br><br>
+                For us, as teenagers who have grown up playing Minecraft, it is more than just entertainment. It is a part of our generation's culture. It has given us countless memories of building, exploring, and sometimes being unexpectedly defeated by a Creeper. We truly believe that Minecraft will continue to inspire future players just as much as it has inspired us. 
+              </p>
+            </td>
+          </tr>
+        </table>
       </div>
     </div>
   </section>
-  <section class="section2" id="section2">
+  <section id="section2" style="min-height:100vh; background-image:url('https://github.com/lucioooofacc/Proyecto-Hardware/blob/main/fondo-nether.png?raw=true'); background-size:cover;">
+    <a href="#section1"> 
+    <h1 style="font-size:50px; color:#1e8830; background-color:rgba(255, 255, 255, 0.527); display:inline-block"> Content from the game</h1></a>
+    <p style="color:black; background-color:rgba(255,255,255,0.527); border-radius:5px; padding:4px; display:inline-block;">Minecraft offers a wide range of content that shapes how players explore, build, and survive. From creatures and environments to building blocks and regular updates, each part adds to the endless possibilities of the game.</p>
     <br>
-    <h1 style="font-size: 50px; color: #1e8830; background-color: rgba(255, 255, 255, 0.747); display:inline-block"> Content from the game</h1>
+    <h2 style="text-align:left; color:#1e8830; background-color:rgba(255,255,255,0.527); border-radius:5px; padding:4px; display:inline-block;">Mobs</h2>
+    <p style="color:black; background-color:rgba(255,255,255,0.527); border-radius:5px; padding:4px; margin-right: 750px;">Mobs are living entities that can be friendly, neutral, or hostile. <br>Friendly: cows, pigs, villagers, axolotls. <br> Neutral: endermen, wolves, bees. <br> Hostile: zombies, skeletons, creepers, the Ender Dragon. <br> Each mob has unique behaviors that affect gameplay, such as trading, farming, or fighting.</p>
     <br>
-    <p style="text-align: left; color: black; background-color: rgba(255, 255, 255, 0.527); border-radius: 5px; padding: 4px; margin-right: 450px;">Me gusta la pija grande y venudaaa</p>
+     
+     <img src="https://github.com/lucioooofacc/Proyecto-Software/blob/main/allmobsfromminecraft.png?raw=true" alt="mobs de minecraft" style="width:400px; height:200px; float:left;">
+     <br><br><br><br><br><br><br><br><br><br><br><br>
+     <h2 style="text-align:left; color:#1e8830; background-color:rgba(255,255,255,0.527); border-radius:5px; padding:4px; display:inline-block;">Updates</h2>
+     <br><br>
+     <img src="https://github.com/lucioooofacc/Proyecto-Software/blob/main/minecraftupdates.png?raw=true" alt="mobs de minecraft" style="width:800px; height:400px; float:right; margin-right: 20px;">
+        <p style="color:black; background-color:rgba(255,255,255,0.527); border-radius:5px; padding:4px; margin-right: 850px;">Minecraft receives regular updates that add new mechanics, mobs, biomes, and blocks. Major examples include the Nether Update, Caves & Cliffs, and The Wild Update.  These updates keep the game fresh and expand the ways players can explore and create.</p>
+            <p style="color:black; background-color:rgba(255,255,255,0.527); border-radius:5px; padding:4px; margin-right: 850px;">If you want to know more, we leave you this link to a minecraft update's timeline, where you can see with more detail what was included in each update, along with its date of release.</p>
+            <a href="https://minecraft-timeline.github.io/">
+            <p style="color:#1e8830; background-color:rgba(255,255,255,0.527); border-radius:5px; padding:4px; display: inline-block;">Minecraft Timeline</p>
+        </a>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
   </section>
-  <section class="section3" id="section3">
+  <section id="section3" style="min-height:100vh; background-image:url('https://github.com/lucioooofacc/Proyecto-Software/blob/main/mundominecraftalpha.png?raw=true'); background-size:cover; background-repeat:no-repeat;">
+    <br>
+     <a href="#section1">
+    <h1 style="font-size:50px; color:#1e8830; background-color:rgba(255, 255, 255, 0.527); display:inline-block"> Content from the game</h1></a>
+    <p style="color:black; background-color:rgba(255,255,255,0.527); border-radius:5px; padding:4px; display:inline-block;">hoe</p>
+    <br>
+  </section>
+  <section id="section4" style="min-height:100vh; background-image:url('https://raw.githubusercontent.com/lucioooofacc/Proyecto-Hardware/refs/heads/main/fondo-end.png'); background-size:cover; background-repeat:no-repeat;">
     <footer>
-    <br><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
       <div id="footer">
-      <h2 style="background-color: rgb(255, 255, 255, 0.527); display: inline-block;"> Sources</h2>
-      <br>
-      <ul style="display: inline-block;">
-        <li style="background-color:rgba(255, 255, 255, 0.527);"> <a href="https://es.minecraft.wiki/"> Wiki of Minecraft</a></li>
-        <li style="background-color: rgba(255, 255, 255, 0.527);"> <a href="https://www.minecraft.net/es-es"> Oficial Minecraft's site</a></li>
-      </ul>
-    </div>
-  </footer>
-</section>
+        <a href="#section1">
+        <h2 style="background-color:rgba(255,255,255,0.527); display:inline-block;"> Sources</h2></a>
+        <br>
+        <ul style="display:inline-block;">
+          <li style="background-color:rgba(255,255,255,0.527);"> <a href="https://es.minecraft.wiki/"> Wiki of Minecraft</a></li>
+          <li style="background-color:rgba(255,255,255,0.527);"> <a href="https://www.minecraft.net/es-es"> Oficial Minecraft's site</a></li>
+        </ul>
+      </div>
+    </footer>
+  </section>
 </body>
 </html>
